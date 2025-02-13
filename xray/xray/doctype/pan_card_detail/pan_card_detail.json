@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:reference_id",
+ "creation": "2025-02-13 12:37:17.554651",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "reference_id",
+  "column_break_njnb",
+  "pan_card_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "reference_id",
+   "fieldtype": "Data",
+   "label": "Reference ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_njnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_card_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pan Card Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-13 13:29:27.867494",
+ "modified_by": "Administrator",
+ "module": "Xray",
+ "name": "Pan Card Detail",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
