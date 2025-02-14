@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestUserPanCardDetails(FrappeTestCase):
+class TestPanCardVerification(FrappeTestCase):
 	pass

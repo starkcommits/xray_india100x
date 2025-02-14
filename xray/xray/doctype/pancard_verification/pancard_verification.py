@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class PanCardDetail(Document):
+class PanCardVerification(Document):
 	pass

@@ -1,15 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:client_ref_id",
+ "autoname": "format:test{####}",
  "creation": "2025-02-13 12:43:54.116101",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "request_detail_section",
+  "pan_card_number",
   "response_detail_section",
   "request_id",
-  "column_break_oljd",
-  "client_ref_id",
   "result_section",
   "pan_number",
   "pan_type",
@@ -52,17 +52,6 @@
    "label": "Request ID"
   },
   {
-   "fieldname": "column_break_oljd",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "client_ref_id",
-   "fieldtype": "Link",
-   "label": "Client Ref ID",
-   "options": "Pan Card Detail",
-   "unique": 1
-  },
-  {
    "fieldname": "result_section",
    "fieldtype": "Section Break",
    "label": "Result"
@@ -80,12 +69,14 @@
   {
    "fieldname": "aadhaar_number",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Aadhaar Number"
   },
   {
    "default": "0",
    "fieldname": "aadhaar_linked",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "Aadhaar Linked"
   },
   {
@@ -121,6 +112,7 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Full Name"
   },
   {
@@ -141,6 +133,7 @@
   {
    "fieldname": "gender",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Gender"
   },
   {
@@ -209,15 +202,25 @@
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code"
+  },
+  {
+   "fieldname": "request_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Request Detail"
+  },
+  {
+   "fieldname": "pan_card_number",
+   "fieldtype": "Data",
+   "label": "Pan Card Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-13 12:58:06.443706",
+ "modified": "2025-02-14 15:34:50.169298",
  "modified_by": "Administrator",
  "module": "Xray",
- "name": "User Pan Card Details",
- "naming_rule": "By fieldname",
+ "name": "PanCard Verification",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

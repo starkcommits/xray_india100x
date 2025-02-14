@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestUserAadharDetails(FrappeTestCase):
+class TestAadharCardVerification(FrappeTestCase):
 	pass

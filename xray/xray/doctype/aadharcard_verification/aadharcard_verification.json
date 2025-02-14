@@ -1,15 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:client_ref_id",
+ "autoname": "format:{######}",
  "creation": "2025-02-13 12:58:40.681608",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "request_detail_section",
+  "aadhaar_card_number",
   "response_detail_section",
   "request_id",
-  "column_break_hqen",
-  "client_ref_id",
   "result_section",
   "aadhaar_age_band",
   "aadhaar_gender",
@@ -28,17 +28,6 @@
    "fieldname": "request_id",
    "fieldtype": "Data",
    "label": "Request ID"
-  },
-  {
-   "fieldname": "column_break_hqen",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "client_ref_id",
-   "fieldtype": "Link",
-   "label": "Client Ref ID",
-   "options": "Adhar Card Detail",
-   "unique": 1
   },
   {
    "fieldname": "result_section",
@@ -73,15 +62,25 @@
   {
    "fieldname": "column_break_cuqn",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Request Detail"
+  },
+  {
+   "fieldname": "aadhaar_card_number",
+   "fieldtype": "Data",
+   "label": "Aadhaar Card Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-13 13:06:20.658716",
+ "modified": "2025-02-14 15:55:25.691699",
  "modified_by": "Administrator",
  "module": "Xray",
- "name": "User Aadhar Details",
- "naming_rule": "By fieldname",
+ "name": "AadharCard Verification",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

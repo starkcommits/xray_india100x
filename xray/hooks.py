@@ -138,9 +138,11 @@ app_license = "mit"
 # Hook on document methods and events
 
 doc_events = {
-	"Pan Card Detail": {
-		"on_update": "xray.api_call.make_api_request",
-		"after_insert": "xray.api_call.make_api_request",
+	"PanCard Verification": {
+		"after_insert": "xray.api_call.make_pan_api_request"
+	},
+	"AadharCard Verification": {
+		"after_insert": "xray.api_call.make_adhar_api_request"
 	}
 }
 
