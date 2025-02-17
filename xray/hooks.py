@@ -145,7 +145,11 @@ doc_events = {
 		"after_insert": "xray.api_call.make_adhar_api_request"
 	}
 }
-
+api = {
+    "methods": [
+        "xray.api_call.pan_card_verification","xray.api_call.aadhar_card_verification"
+    ]
+}
 # Scheduled Tasks
 # ---------------
 
@@ -175,11 +179,11 @@ doc_events = {
 # Overriding Methods
 # ------------------------------
 #
-override_whitelisted_methods = {
-	# "frappe.desk.doctype.event.event.get_events": "xray.event.get_events"
-	"frappe.client.get_list": "xray.api_call.get_custom_list",
-    "frappe.client.get_doc": "xray.api_call.get_custom_doc"
-}
+# override_whitelisted_methods = {
+# 	# "frappe.desk.doctype.event.event.get_events": "xray.event.get_events"
+# 	"frappe.client.get_list": "xray.api_call.get_custom_list",
+#     "frappe.client.get_doc": "xray.api_call.get_custom_doc"
+# }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
