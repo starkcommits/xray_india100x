@@ -100,3 +100,74 @@ def make_adhar_api_request(doc, method):
 
     except Exception as e:
         frappe.log_error(f"API Call Failed: {str(e)}", "API Integration")
+
+def get_custom_list(doctype, **kwargs):
+    if doctype == "PanCard Verification":
+        data = frappe.get_list(doctype, **kwargs)
+        custom_data = []
+
+        for item in data:
+            doc = frappe.get_doc(doctype, item.name)
+            custom_data.append({
+                "id": doc.name,
+                "pan_card_number": doc.pan_card_number,
+                "request_id": doc.request_id,
+                "pan_number": doc.pan_number,
+                "pan_type": doc.pan_type,
+                "aadhaar_number": doc.aadhaar_number,
+                "aadhaar_linked": doc.aadhaar_linked,
+                "date_of_birth": doc.date_of_birth,
+                "pan_status": doc.pan_status,
+                "pan_allotment_date": doc.pan_allotment_date,
+                "full_name": doc.full_name,
+                "first_name": doc.first_name,
+                "middle_name": doc.middle_name,
+                "last_name": doc.last_name,
+                "gender": doc.gender,
+                "is_sole_proprietor": doc.is_sole_proprietor,
+                "is_director": doc.is_director,
+                "is_salaried": doc.is_salaried,
+                "building_name": doc.building_name,
+                "locality": doc.locality,
+                "street_name": doc.street_name,
+                "city": doc.city,
+                "state": doc.state,
+                "country": doc.country,
+                "pin_code": doc.pin_code,
+            })
+        return custom_data
+    else:
+        return frappe.get_list(doctype, **kwargs)
+
+def get_custom_doc(doctype, name, **kwargs):
+    if doctype == "PanCard Verification":
+        doc = frappe.get_doc(doctype, name)
+        return {
+            "id": doc.name,
+            "pan_card_number": doc.pan_card_number,
+            "request_id": doc.request_id,
+            "pan_number": doc.pan_number,
+            "pan_type": doc.pan_type,
+            "aadhaar_number": doc.aadhaar_number,
+            "aadhaar_linked": doc.aadhaar_linked,
+            "date_of_birth": doc.date_of_birth,
+            "pan_status": doc.pan_status,
+            "pan_allotment_date": doc.pan_allotment_date,
+            "full_name": doc.full_name,
+            "first_name": doc.first_name,
+            "middle_name": doc.middle_name,
+            "last_name": doc.last_name,
+            "gender": doc.gender,
+            "is_sole_proprietor": doc.is_sole_proprietor,
+            "is_director": doc.is_director,
+            "is_salaried": doc.is_salaried,
+            "building_name": doc.building_name,
+            "locality": doc.locality,
+            "street_name": doc.street_name,
+            "city": doc.city,
+            "state": doc.state,
+            "country": doc.country,
+            "pin_code": doc.pin_code,
+        }
+    else:
+        return frappe.get_doc(doctype, name)
