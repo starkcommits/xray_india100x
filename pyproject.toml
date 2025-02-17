@@ -1,9 +1,9 @@
 [project]
-name = "xray"
+name = "rewardapp"
 authors = [
-    { name = "xfer private india ltd.", email = "xfer@india100x.com"}
+    { name = "xFer India100x pvt ltd.", email = "xfer@india100x.com"}
 ]
-description = "Verification"
+description = "Reward App"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

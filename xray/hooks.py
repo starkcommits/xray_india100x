@@ -137,13 +137,14 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"PanCard Verification": {
+		"after_insert": "xray.api_call.make_pan_api_request"
+	},
+	"AadharCard Verification": {
+		"after_insert": "xray.api_call.make_adhar_api_request"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
