@@ -1,6 +1,6 @@
-## Reward App
+## Xray App
 
-Reward App
+Xray App
 
 #### License
 
