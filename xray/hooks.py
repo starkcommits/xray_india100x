@@ -177,8 +177,8 @@ doc_events = {
 #
 override_whitelisted_methods = {
 	# "frappe.desk.doctype.event.event.get_events": "xray.event.get_events"
-	"frappe.client.get_list": "your_app.api.get_custom_list",
-    "frappe.client.get_doc": "your_app.api.get_custom_doc"
+	"frappe.client.get_list": "xray.api_call.get_custom_list",
+    "frappe.client.get_doc": "xray.api_call.get_custom_doc"
 }
 #
 # each overriding function accepts a `data` argument;
