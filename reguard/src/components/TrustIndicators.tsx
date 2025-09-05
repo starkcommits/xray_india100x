@@ -1,6 +1,12 @@
 import React from 'react';
 import { Shield, Award, Users, Zap } from 'lucide-react';
-
+import airbnbLogo from '../assets/airbnb.png';
+import RedditLogo from '../assets/reddit.webp';
+import BetwayLogo from '../assets/betway.webp';
+import Dream11Logo from '../assets/Dream11Logo.png';
+import MetaLogo from '../assets/meta.webp';
+import OnoLogo from '../assets/Onologo.avif';
+import Probo from '../assets/probo.avif';
 export const TrustIndicators: React.FC = () => {
   const stats = [
     {
@@ -62,189 +68,117 @@ export const TrustIndicators: React.FC = () => {
             <div className="flex animate-scroll space-x-12 items-center">
               {/* First set of logos */}
               <div className="flex space-x-12 items-center min-w-max">
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-14 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/HDFC-Bank-Logo.png" 
-                    alt="HDFC Bank" 
+                    src={airbnbLogo}  
+                    alt="Airbnb"
+                    width={80}
+                    height={80}  
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-12 w-32  transition-all duration-300">
+                  <img 
+                    src={BetwayLogo}
+                    alt="Betway" 
                     className="h-8 w-auto object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/ICICI-Bank-Logo.png" 
-                    alt="ICICI Bank" 
-                    className="h-8 w-auto object-contain"
+                    src={Dream11Logo}
+                    alt="Dream11" 
+                    className="h-20 w-auto object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/Axis-Bank-Logo.png" 
-                    alt="Axis Bank" 
-                    className="h-8 w-auto object-contain"
+                    src={MetaLogo}
+                    alt="Meta" 
+                    className="h-12 w-auto object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/Kotak-Mahindra-Bank-Logo.png" 
-                    alt="Kotak Mahindra Bank" 
-                    className="h-8 w-auto object-contain"
+                    src={RedditLogo}
+                    alt="Reddit"
+                    width={200}
+                    height={100} 
+                    className=" object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/SBI-Logo.png" 
-                    alt="State Bank of India" 
-                    className="h-8 w-auto object-contain"
+                    src={OnoLogo}
+                    alt="Ono"
+                    width={100}
+                    height={90} 
+                    className=" object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2020/11/Paytm-Logo.png" 
-                    alt="Paytm" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/PhonePe-Logo.png" 
-                    alt="PhonePe" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/Razorpay-Logo.png" 
-                    alt="Razorpay" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="TechCorp" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="FinanceFlow" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="SecureBank" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="DataVault" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="CryptoShield" 
-                    className="h-8 w-auto object-contain rounded"
+                    src={Probo}
+                    alt="Probo" 
+                    className="h-24 w-full object-contain"
                   />
                 </div>
               </div>
               {/* Duplicate set for seamless loop */}
               <div className="flex space-x-12 items-center min-w-max">
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-14 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/HDFC-Bank-Logo.png" 
-                    alt="HDFC Bank" 
+                    src={airbnbLogo}  
+                    alt="Airbnb"
+                    width={80}
+                    height={80}  
+                    className=" object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-12 w-32  transition-all duration-300">
+                  <img 
+                    src={BetwayLogo}
+                    alt="Betway" 
+                    className="h-12 w-auto object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
+                  <img 
+                    src={Dream11Logo}
+                    alt="Dream11" 
+                    className="h-20 w-auto object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
+                  <img 
+                    src={MetaLogo}
+                    alt="Meta" 
                     className="h-8 w-auto object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/ICICI-Bank-Logo.png" 
-                    alt="ICICI Bank" 
-                    className="h-8 w-auto object-contain"
+                    src={RedditLogo}
+                    alt="Reddit"
+                    width={200}
+                    height={100} 
+                    className=" object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/Axis-Bank-Logo.png" 
-                    alt="Axis Bank" 
-                    className="h-8 w-auto object-contain"
+                    src={OnoLogo}
+                    alt="Ono"
+                    width={100}
+                    height={90} 
+                    className=" object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center h-12 w-32 transition-all duration-300">
                   <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/Kotak-Mahindra-Bank-Logo.png" 
-                    alt="Kotak Mahindra Bank" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/02/SBI-Logo.png" 
-                    alt="State Bank of India" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2020/11/Paytm-Logo.png" 
-                    alt="Paytm" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/PhonePe-Logo.png" 
-                    alt="PhonePe" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/Razorpay-Logo.png" 
-                    alt="Razorpay" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="TechCorp" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="FinanceFlow" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="SecureBank" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="DataVault" 
-                    className="h-8 w-auto object-contain rounded"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
-                  <img 
-                    src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" 
-                    alt="CryptoShield" 
-                    className="h-8 w-auto object-contain rounded"
+                    src={Probo}
+                    alt="Probo" 
+                    className="h-24 w-full object-contain"
                   />
                 </div>
               </div>

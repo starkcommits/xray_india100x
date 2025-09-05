@@ -44,6 +44,9 @@ export const SolutionDetailPage: React.FC = () => {
       name: 'EmbedKYC',
       tagline: 'Custom KYC Flow Builder for Financial Institutions',
       badge: 'NEW',
+      metaTitle: 'Embed KYC by reguard | Easy Custom KYC Workflows',
+      metaDescription:
+        'Design and customize KYC workflows with EmbedKYC by reguard. Use a simple drag-and-drop tool to meet compliance and streamline identity verification.',
       description:
         'Build and customize your own KYC compliance workflows with our intuitive drag-and-drop interface. Create tailored identity verification processes that match your exact regulatory requirements and business needs.',
       longDescription:
@@ -95,6 +98,9 @@ export const SolutionDetailPage: React.FC = () => {
     watchdawg: {
       name: 'WatchDawg',
       tagline: '360° AML Risk Monitoring and Compliance Platform',
+      metaTitle: 'WatchDawg AML Risk Monitoring | reguard',
+      metaDescription:
+        'Stay ahead of financial crimes with WatchDawg by reguard — a smart AML risk monitoring solution offering 24/7 surveillance across all customer touchpoints.',
       description:
         'Comprehensive AML risk monitoring solution that provides continuous surveillance across all customer touchpoints to identify and mitigate financial crimes before they impact your institution.',
       longDescription:
@@ -147,6 +153,9 @@ export const SolutionDetailPage: React.FC = () => {
       name: "Hear'O'Clock",
       tagline:
         'AI-Powered Reputation Management for Brands, Enterprises & Government',
+      metaTitle: "Hear’O’Clock by reguard | Real-Time Brand Protection",
+      metaDescription:
+        'Stay ahead with Hear’O’Clock by reguard – advanced reputation monitoring and crisis management to protect your brand across all digital channels.',
       description:
         "Advanced reputation monitoring and crisis management platform that tracks, analyzes, and helps protect your brand's online presence across all digital channels with real-time threat detection.",
       longDescription:
@@ -198,6 +207,9 @@ export const SolutionDetailPage: React.FC = () => {
     complianceiq: {
       name: 'ComplianceIQ',
       tagline: 'Intelligent Regulatory Compliance Automation Platform',
+      metaTitle: 'ComplianceIQ: Smart Compliance & Risk Management | reguard',
+      metaDescription:
+        'Stay ahead of regulations with ComplianceIQ by reguard. Simplify compliance, reduce risks, and ensure trust with easy, reliable solutions.',
       description:
         'AI-powered compliance automation platform that streamlines regulatory processes, ensures adherence to multiple frameworks, and reduces compliance costs by up to 60%.',
       longDescription:
@@ -255,6 +267,9 @@ export const SolutionDetailPage: React.FC = () => {
     fraudshield: {
       name: 'FraudShield',
       tagline: 'Advanced Fraud Detection & Prevention Platform',
+      metaTitle: 'FraudShield by reguard | Smart Protection Against Fraud',
+      metaDescription:
+        'Stay one step ahead with FraudShield by reguard. Detect, prevent, and fight fraud with ease—protecting your business and customers in real time.',
       description:
         'Machine learning-powered fraud detection system that identifies suspicious activities in real-time, preventing financial losses and protecting customer trust.',
       longDescription:
@@ -312,6 +327,9 @@ export const SolutionDetailPage: React.FC = () => {
     riskradar: {
       name: 'RiskRadar',
       tagline: 'Real-time Risk Assessment & Monitoring Dashboard',
+      metaTitle: 'RiskRadar by Reguard | Smart Risk & Fraud Detection',
+      metaDescription:
+        'Stay ahead of fraud with RiskRadar by Reguard. Get real-time risk insights, smarter identity checks, and secure decisions to protect your business.',
       description:
         'Comprehensive risk management platform that provides 360-degree visibility into organizational risks with predictive analytics and automated mitigation strategies.',
       longDescription:
@@ -390,34 +408,18 @@ export const SolutionDetailPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>
-          {solution.name} - {solution.tagline} | Reguard RegTech Solutions
-        </title>
-        <meta
-          name="description"
-          content={`${solution.longDescription} Enterprise-grade ${solution.name} solution with advanced features, compliance automation, and 24/7 support.`}
-        />
+        <title>{solution.metaTitle}</title>
+        <meta name="description" content={solution.metaDescription} />
         <meta
           name="keywords"
-          content={`${solution.name}, ${
-            solution.tagline
-          }, RegTech solution, compliance automation, ${
-            solution.name === 'EmbedKYC'
-              ? 'KYC workflow builder, custom onboarding, drag drop KYC, financial compliance'
-              : solution.name === 'WatchDawg'
-              ? 'AML monitoring, risk management, sanctions screening, transaction monitoring, financial crime prevention'
-              : 'reputation management, brand monitoring, crisis management, sentiment analysis, social media monitoring'
-          }, enterprise software, regulatory technology, compliance platform, automated monitoring, risk mitigation`}
+          content={`${solution.name}, ${solution.tagline}, RegTech solution, compliance automation, enterprise software, regulatory technology, compliance platform, automated monitoring, risk mitigation`}
         />
         <link
           rel="canonical"
           href={`https://reguard.com/solutions/${solutionId}`}
         />
-        <meta
-          property="og:title"
-          content={`${solution.name} - ${solution.tagline}`}
-        />
-        <meta property="og:description" content={solution.description} />
+        <meta property="og:title" content={solution.metaTitle} />
+        <meta property="og:description" content={solution.metaDescription} />
         <meta
           property="og:url"
           content={`https://reguard.com/solutions/${solutionId}`}

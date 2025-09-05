@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SignUpModal } from './SignUpModal';
 import { LoginModal } from './LoginModal';
 import { Menu, X, ChevronDown, UserCheck, Users, Shield, FileText, AlertTriangle, Eye, TrendingUp, Building2, CreditCard, Globe, Database, Gavel, ExternalLink, Briefcase, BookOpen, Info, Sparkles, Clock } from 'lucide-react';
-
+import ReguardLogo from '../assets/reguard-new-logo-dark.svg';
 const apiCategories = [
   { id: 'kyc', icon: UserCheck, title: 'KYC', description: 'Identity verification for individuals', count: 6 },
   { id: 'kyb', icon: Users, title: 'KYB', description: 'Business verification solutions', count: 4 },
@@ -72,7 +72,7 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link to="/">
-              <img src="/reguard logo.svg" alt="Reguard" className="h-9 w-auto" />
+              <img src={ReguardLogo} alt="Reguard" className="h-9 w-auto" />
             </Link>
             <div className="hidden lg:flex items-center ml-4">
               <Link to="/careers">
